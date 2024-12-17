@@ -1,0 +1,296 @@
+/***************************  Evrensel Stiller ************************************/
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.main-content {
+  position: relative;
+  top: 5.3125rem; /* Sabit başlık için ofset. */
+}
+
+.center {
+  text-align: center;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: #4a4a4a;
+  color: white;
+}
+
+.image-container {
+  overflow: none;
+}
+
+.image-container img {
+  /* Görsellerin aynı satırda görüntülenmesi için inline-flex olarak ayarlandı. */
+  display: inline-flex;
+
+  max-width: 100%;
+}
+
+/* Başlık */
+
+header {
+  position: fixed;
+
+  /* Başlığın her zaman önde kalması için z-index eklendi. */
+  z-index: 1;
+  width: 100%;
+  border-bottom: solid 1px #c6c1c1;
+  background-color: white;
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+  padding: 1.875rem;
+}
+
+header .logo {
+  flex: 1;
+}
+
+header nav ul {
+  display: flex;
+}
+
+nav li {
+  padding-left: 3.5rem;
+}
+
+nav a {
+  vertical-align: bottom;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #4a4a4a;
+}
+
+header .icon {
+  width: 1rem;
+  padding-left: 0.75rem;
+}
+
+header .mobile {
+  display: none;
+}
+
+/* Kayıt Ol Bölümü */
+
+#sign-up-section {
+  display: flex;
+  min-width: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 43.5rem;
+
+  /* Kayıt ol konteynerına arka plan resmi eklendi. */
+  background-image: url(../images/banner-landingpage.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#sign-up-cta {
+  /* Kayıt ol konteynerına kenar boşluğu eklendi. */
+  margin: auto 10rem auto 5rem;
+
+  padding: 0 5rem 2.5rem 5rem;
+  border: solid 1px #979797;
+  border-radius: 4px;
+  background-color: #9dc20b;
+}
+
+#sign-up-cta .content {
+  width: 25.625rem;
+  margin-top: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: white;
+}
+
+#sign-up-cta h1 {
+  font-size: 3.125rem;
+}
+
+#sign-up-cta h2 {
+  font-size: 2.25rem;
+}
+
+#sign-up-cta span strong {
+  font-weight: bold;
+}
+
+#sign-up-cta .cursive {
+  font-family: "Damion", cursive;
+}
+
+#sign-up-cta .striking {
+  font-family: "Rubik", sans-serif;
+  padding-bottom: 0.75rem;
+}
+
+#sign-up-cta .button {
+  margin-top: 1.625rem;
+  padding: 1.25rem 7.25rem;
+}
+
+/* Özellikler Bölümü */
+
+#features-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 5%;
+  background-color: #f3f3f3;
+}
+
+.feature {
+  flex: 1;
+  padding: 2rem;
+  margin: 0 1.25rem;
+  background-color: white;
+}
+
+.feature .image-container {
+  width: 90%;
+  height: 65%;
+  margin: 0 auto;
+  /* Özellikler bölümündeki görsellere alt kenarlık eklendi, daha temiz görünmesi için. */
+  padding-bottom: 30px;
+}
+
+.feature h2 {
+  padding-bottom: 0.5rem;
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+
+.feature h3 {
+  font-size: 1rem;
+  line-height: 1.2;
+  font-weight: 300;
+  color: #4a4a4a;
+}
+
+/* Filtreler Bölümü */
+
+#filters-section {
+  padding: 4rem 0;
+  background-color: #4a4a4a;
+}
+
+#filters-section .content {
+  padding: 0 0.625rem;
+  margin-bottom: 5rem;
+}
+
+#filters-section .content h2 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: white;
+}
+
+#filters-section .content h3 {
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 300;
+  color: white;
+}
+
+#filters-section .images-container {
+  /* Görseller konteynerının görüntü stili filtreler bölümünde flex olarak ayarlandı. */
+  display: flex;
+
+  max-width: 100%;
+  padding: 0 1%;
+}
+
+/* Alıntılar Bölümü */
+
+#quotes-section {
+  /* Alıntılar bölümüne üst ve alt kenarlık eklendi, daha iyi görünmesi için. */
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  background-color: #f3f3f3;
+}
+
+#quotes-section content {
+  padding: 5rem 0;
+}
+
+/* Alıntıya nokta eklendi, uygun stilleri uygulayabilmek için. */
+#quotes-section .quote {
+  padding-right: 1.875rem;
+  font-family: "Palatino", serif;
+  font-size: 1.875rem;
+  line-height: 1.1;
+  font-style: italic;
+  color: #4a4a4a;
+}
+
+/* Alıntı atıfına nokta eklendi, uygun stilleri uygulayabilmek için. */
+#quotes-section .quote-citation {
+  height: 1.875rem;
+}
+
+/* Alt Bilgi */
+
+footer {
+  /* Font boyutu 12px olarak değiştirildi. */
+  font-size: 12px;
+
+  background-color: #9b9b9b;
+  padding: 1.5rem 2rem;
+}
+
+footer .content {
+  color: white;
+  display: flex;
+  font-family: "Roboto";
+}
+
+footer .copyright {
+  flex-grow: 1;
+}
+
+/***************************** 450px'lik ekranlar için tüm stiller **************************************** */
+@media only screen and (max-width: 450px) {
+  #sign-up-section {
+    height: 20rem;
+  }
+
+  #sign-up-cta h1 {
+    font-size: 2.25rem;
+  }
+
+  #sign-up-cta h2 {
+    font-size: 2rem;
+  }
+}
+
+/***************************** 760px'lik ekranlar için tüm stiller **************************************** */
+/* 760px'lik ekran için yalnızca bir medya sorgusu (diğer 760px ekran medya sorguları hakkındaki yorumlar için aşağıya bakınız) */
+@media only screen and (max-width: 760px) {
+  /* Başlık bölümü */
+  header .desktop {
+    display: none;
+  }
+
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  header .content {
+    padding: 0.5rem 0;
+  }
+
+  header .mobile ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
